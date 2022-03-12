@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="script.js"></script>
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="../rock-paper-scissors/style.css">
+    <title>Rock Paper Scissors </title>
     </head>
 <body>
     
 
+    <section>
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="img_div">
+            <img class="img_left" src="../rock-paper-scissors/rockL.png">
+            <img class="img_right" src="../rock-paper-scissors/rockR.png">
+        </div>
+
+        <p class="p_status"></p>
+
+        <div id="text_div">
+            <p>Player:</p>
+            <p class="player_score"></p>
+            <p>Computer:</p>
+            <p class="comp_score"></p>
+        </div>
+
+        <div class="btn_div">
+            <button type="button" id="btn_rock">Rock</button>
+            <button type="button" id="btn_paper">Paper</button>
+            <button type="button" id="btn_scissors">Scissors</button>
+        </div>
+
+    </section>
+
+<script type="text/javascript" src="../rock-paper-scissors/script.js"></script>
 </body>
 </html>
 
