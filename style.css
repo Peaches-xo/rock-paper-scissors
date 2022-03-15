@@ -9,6 +9,7 @@
 html {
     background: linear-gradient(to left top, rgb(252, 170, 196), rgb(227, 185, 255), rgb(248, 195, 98));
     /* overflow-y: hidden; */
+    height: 100vh;  
 }
 
 section {
@@ -38,13 +39,18 @@ section {
 
 #text_div{
     display:flex;
-    justify-content: space-around;
-    width: 50%;
-    border: solid 2px purple;
+    justify-content: center;
+    gap: 30px;
+    width: 80%; 
     font-size: 2.1rem;
     font-weight:bold;
     color:white;
     text-shadow: 0px 8px 32px  rgba( 31, 38, 135, 0.37 );
+    /* border: solid 2px fuchsia; */
+}
+
+#text_div p{
+    margin: 0px;
 }
 
 h1 {
@@ -55,7 +61,8 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 40px;
+    margin: 30px 0px 0px 0px;
+    /* border: solid 3px lime; */
   }
 
   button {
@@ -72,6 +79,9 @@ h1 {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   }
 
+  .btn_div{
+      margin-bottom: 20px;
+  }
   button:hover{
       transform: scale(1.1);
   }
@@ -81,17 +91,19 @@ h1 {
     gap: 20px;
     justify-content: center;
     align-items: flex-end;
-    border: solid 2px limegreen;
+    /* border: solid 3px lime; */
+    height: 400px;
 }
 
 .img_div img{
-    height: 50%;
+    height: 70%;
+    padding-bottom: 10px;   
 }
 
-.img_left, .img_right{
-    animation: gbounce 1s;
-    animation-iteration-count: 3;
-    animation-timing-function: ease;
+.anim{
+animation: gbounce 1s;
+animation-iteration-count: 2.5;
+animation-timing-function: ease-in;
 }
 
 @keyframes gbounce { 
