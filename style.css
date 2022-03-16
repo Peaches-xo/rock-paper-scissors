@@ -145,7 +145,7 @@ animation-timing-function: ease-in;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
     button {
         padding: 5px;
         margin: 5px;
