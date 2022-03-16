@@ -1,15 +1,18 @@
 /* CSS file for index.html of RPS-UI project */
 
-*{
+* {
     padding: 0;
     border: 0;
     outline: none;
-    font-family: 'Hubballi', cursive; 
+    font-family: 'Hubballi', sans-serif; 
 }
-html {
+
+body{
     background: linear-gradient(to left top, rgb(252, 170, 196), rgb(227, 185, 255), rgb(248, 195, 98));
-    /* overflow-y: hidden; */
-    height: 100vh;  
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 section {
@@ -18,21 +21,18 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 90vh;
+    width: 80vw;
     margin: 50px;
     padding: 10px;
     background: rgba( 255, 255, 255, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+    border-radius: 100px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    /* border: solid 5px lime; */
 }
 
 .p_status{
-    font-size: 2rem;
-    font-weight:bold;
-    color:white;
+    font: 2.5rem 'Hubballi', bold;
+    color: white;
     margin: 0 auto; 
     height: 30px;
 }
@@ -40,41 +40,38 @@ section {
 #text_div{
     display:flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
     width: 80%; 
-    font-size: 2.1rem;
-    font-weight:bold;
-    color:white;
-    text-shadow: 0px 8px 32px  rgba( 31, 38, 135, 0.37 );
-    /* border: solid 2px fuchsia; */
+    font: 2.5rem 'Hubballi', bold;
 }
 
 #text_div p{
     margin: 0px;
-}
-
-h1 {
-    font-size: 72px;
-    font-family: 'Hubballi', cursive;
-    text-shadow: 0px 8px 32px rgba( 31, 38, 135, 0.37 );
     background: -webkit-linear-gradient(rgb(236, 135, 168), rgb(200, 130, 247));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 30px 0px 0px 0px;
-    /* border: solid 3px lime; */
+}
+
+h1 {
+    font: 72px 'Hubballi', sans-serif;
+    background: -webkit-linear-gradient(rgb(236, 135, 168), rgb(200, 130, 247));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
   }
 
   button {
     background-color: rgb(248, 195, 98); 
     border: none;
     border-radius: 10px;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 2rem;
+    color: white;
     margin: 10px;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   }
@@ -91,7 +88,6 @@ h1 {
     gap: 20px;
     justify-content: center;
     align-items: flex-end;
-    /* border: solid 3px lime; */
     height: 400px;
 }
 
@@ -113,4 +109,45 @@ animation-timing-function: ease-in;
     100% { transform: translateY(0); }
   }
   
- 
+@media screen and (max-width: 1060px) {
+    .img_div{
+        align-items: center;
+        height: 40%;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        margin: 0px;
+        border-radius: 100px;
+    }
+    h1 {
+        font-size: 50px;
+        padding: 5px;
+        text-align: center;
+    }
+    .img_div img {
+        height: 40%;
+    }
+    .p_status, #text_div{
+         font-size: 1.5rem;
+    }
+    button {
+        padding: 10px;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    button {
+        padding: 5px;
+        margin: 5px;
+    }
+    #text_div{
+        gap: 20px;
+    }    
+    section {
+        width: 100vw;
+    }
+}
