@@ -87,8 +87,7 @@ h1 {
     display:flex;
     gap: 20px;
     justify-content: center;
-    align-items: flex-end;
-    height: 400px;
+    align-items: center;
 }
 
 .img_div img{
