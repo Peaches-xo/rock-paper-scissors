@@ -8,6 +8,7 @@ let computerSelection;
 const btnDiv = document.querySelector(".btn_div"); //select btn div
 btnDiv.addEventListener('click',function(e){ //give me which btn was clicked 
     playerSelection = e.target.textContent; //& put in playerSelection
+    console.log(playerSelection);
 
     addAnim();
     computerSelection = (getCompSelection());
