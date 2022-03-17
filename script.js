@@ -8,11 +8,10 @@ let computerSelection;
 const btnDiv = document.querySelector(".btn_div"); //select btn div
 btnDiv.addEventListener('click',function(e){ //give me which btn was clicked 
     playerSelection = e.target.textContent; //& put in playerSelection
-    console.log(playerSelection);
+    p_status.textContent = "";
 
     addAnim();
     computerSelection = (getCompSelection());
-
     img_left.onanimationend = function(){  
         showHands(playerSelection, computerSelection); 
         removeAnim();
@@ -91,11 +90,14 @@ function declareWinner(){
     } else {
         p_status.textContent = `Your score: ${playerWins}. Comp Score ${compWins}. You lose!`;
     }
-
-    playerWins = 0;
-    compWins = 0;
-    p_playerScore.textContent = 0;
-    p_compScore.textContent = 0;
+    setTimeout(resetWins, 3000);
+    function resetWins(){
+        playerWins = 0;
+        compWins = 0;
+        p_playerScore.textContent = 0;
+        p_compScore.textContent = 0;
+        p_status.textContent = "Click to play again";
+    }
 }
 
 
