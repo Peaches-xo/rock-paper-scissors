@@ -25,3 +25,17 @@ Issues that came up & how I overcame them:
 
   Console text was all the same, hard to visually differentiate where one round finished & the next started. 
   Added some styling with %c to visually break up each round. Added fun rainbow text at the end to show the winner. 
+
+
+
+  PHASE 2 - RPS UI
+
+Positives: I noticed a lot of my code was repeating as I had the same code for each of the three player Selection buttons. I was able to refactor my code successfully from 180 lines down to 98
+by using one eventListener on my button div, rather than 3 individual event listeners. This also allowed me to use the textContent of the button that was clicked as the playerSelection. 
+
+Challenges I overcame:
+Once I was ready to release this little treasure to the world, I noticed the images wouldnt load on change. I found the images were saved in github with a lowercase first letter, but with an uppercase first letter on my computer. 
+I changed the letters manually to match github but my terminal wouldnt recognise the change. A quick google, and I found I have to use git mv old_filename new_filename to change them all. This was an unexpected pain but was solved quickly. 
+
+To look into: 
+Would like to dive deeper into why git in the terminal didnt recognise the changes made in the folder. 
